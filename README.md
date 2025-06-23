@@ -1,49 +1,41 @@
-\section*{PdOx\_CH\textsubscript{4}}
+# PdOx_CH4
 
-\subsection*{1. Scripts}
+## 1. Scripts
 
-All automation tools for generating input and analyzing NEB results are provided in the \texttt{scripts/} folder:
+All automation tools for generating input and analyzing NEB results are provided in the scripts/ folder:
 
-\begin{itemize}
-    \item \texttt{generate\_initial\_final\_states.py}: Places CH\textsubscript{4} molecule and generates CH\textsubscript{3} + H final geometries with overlap checks.
-    \item \texttt{interpolate\_neb\_images.py}: Generates NEB images between valid initial/final state pairs.
-    \item \texttt{run\_neb\_job.sh}: Shell script template to submit NEB jobs to a cluster or local environment.
-    \item \texttt{visualize\_trajectories.py}: Generates overlayed CH\textsubscript{4} activation geometries for each model.
-\end{itemize}
+- generate_initial_final_states.py: Places CH4 molecule and generates CH3 + H final geometries with overlap checks.
+- interpolate_neb_images.py: Generates NEB images between valid initial/final state pairs.
+- run_neb_job.sh: Shell script template to submit NEB jobs to a cluster or local environment.
+- visualize_trajectories.py: Generates overlayed CH4 activation geometries for each model.
 
-\subsection*{2. Optimized Surface Structures}
+## 2. Optimized Surface Structures
 
-The \texttt{input\_structures/} folder contains optimized surface models (in \texttt{.vasp} format) used to generate activation pathways:
+The input_structures/ folder contains optimized surface models (in .vasp format) used to generate activation pathways:
 
-\begin{itemize}
-    \item \texttt{Pd.vasp}, \texttt{PdO.vasp}, \texttt{Pd-PdO.vasp}, and \texttt{PdOx.vasp}
-\end{itemize}
+- Pd.vasp, PdO.vasp, Pd-PdO.vasp, and PdOx.vasp
 
-\subsection*{3. NEB Output Structures}
+## 3. NEB Output Structures
 
-The \texttt{neb\_outputs/} directory contains:
+The neb_outputs/ directory contains:
 
-\begin{itemize}
-    \item Initial and final geometries for each surface site.
-    \item Final NEB-converged transition states.
-    \item Site-wise organization by surface type and site index.
-\end{itemize}
+- Initial and final geometries for each surface site.
+- Final NEB-converged transition states.
+- Site-wise organization by surface type and site index.
 
-\subsection*{4. Visualization}
+## 4. Visualization
 
-Overlay plots of all CH\textsubscript{4} activation trajectories are available in the \texttt{visualizations/} folder:
+Overlay plots of all CH₄ activation trajectories are available in the visualizations/ folder:
 
-\begin{itemize}
-    \item These \texttt{.xyz} files can be opened in visualization tools (e.g., VESTA, ASE GUI, OVITO) to examine the distribution of reaction geometries across all surface sites.
-    \item Color code: Pd (turquoise), O (red), Ce (beige), C (gray), H (white).
-\end{itemize}
+- These .xyz files can be opened in visualization tools (e.g., VESTA, ASE GUI, OVITO) to examine the distribution of reaction geometries across all surface sites.
+- Color code: Pd (turquoise), O (red), Ce (beige), C (gray), H (white).
 
-\subsection*{Citation}
+## Citation
 
 If you use this repository or scripts in your work, please cite:
 
-\begin{quote}
-    \textbf{[DOI Placeholder]} ``Title of Manuscript'', \textit{Journal}, 2025.
-\end{quote}
+> [**DOI Placeholder**] "Title of Manuscript", *Journal*, 2025.
 
-\noindent For any questions or issues, feel free to open an issue or contact the authors.
+---
+
+For any questions or issues, feel free to open an issue or contact the authors.
