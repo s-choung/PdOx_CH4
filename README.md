@@ -7,7 +7,6 @@ All automation tools for generating input and analyzing NEB results are provided
 - generate_initial_final_states.py: Places CH4 molecule and generates CH3 + H final geometries with overlap checks.
 - interpolate_neb_images.py: Generates NEB images between valid initial/final state pairs.
 - run_neb_job.sh: Shell script template to submit NEB jobs to a cluster or local environment.
-- visualize_trajectories.py: Generates overlayed CH4 activation geometries for each model.
 
 ## 2. Optimized Surface Structures
 
@@ -23,12 +22,6 @@ The neb_outputs/ directory contains:
 - Final NEB-converged transition states.
 - Site-wise organization by surface type and site index.
 
-## 4. Visualization
-
-Overlay plots of all CH₄ activation trajectories are available in the visualizations/ folder:
-
-- These .xyz files can be opened in visualization tools (e.g., VESTA, ASE GUI, OVITO) to examine the distribution of reaction geometries across all surface sites.
-- Color code: Pd (turquoise), O (red), Ce (beige), C (gray), H (white).
 
 ## Citation
 
